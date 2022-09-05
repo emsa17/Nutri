@@ -32,7 +32,6 @@ body {
 /*---NAV---*/
 nav {
     grid-area: nav;
-
     padding-left: 1rem;
     background-color: #87BBA2;
     font-size: x-large;
@@ -57,7 +56,21 @@ li a {
     padding: 16px;
     text-decoration: none;
 }
+/*EFECTOS EN BARRA NAV*/
+nav li:hover {
+    animation-name: efectosNav;
+    animation-iteration-count: inherit;
+    animation-timing-function: ease-in;
+    animation-duration: 4s;
+    border-radius: 1rem;
 
+}
+
+@keyframes efectosNav {
+    0% {
+        background-color: rgb(162, 153, 153)
+}
+}
 /*--FIN NAV---*/
 
 
@@ -113,6 +126,7 @@ main {
     padding-top: 10px;
     display: flex;
     flex-direction: row;
+    text-align: center;
 
 
 
@@ -155,6 +169,9 @@ main {
             "quinoa"
         ;
     }
+    #portada img{
+        width: 300px;
+    }
 
 }
 
@@ -183,13 +200,15 @@ main {
     grid-area: controles;
 }
 
-
+.tituloServicios{
+    text-align: center;
+}
 
 
 /*----EFECTOSSS----*/
 #efects {
 
-    text-align: center;
+    text-align: justify;
 }
 
 #efects:hover {
@@ -218,31 +237,7 @@ main {
         gap: 2rem;
     }
 
-    .consultas {
-        grid-area: consultas;
-    }
-
-    .planAlimen {
-        grid-area: planAlimen;
-    }
-
-    .controles {
-        grid-area: controles;
-    }
-
-    #efects {
-
-        text-align: center;
-    }
-
-    #efects:hover {
-        animation-name: movPlanes;
-        animation-iteration-count: inherit;
-        animation-timing-function: ease-in;
-        animation-duration: 4s;
-        border-radius: 1rem;
-
-    }
+   
 
 }
 
@@ -339,6 +334,14 @@ main {
 
 /*PAGE CONTACTO*/
 
+#mainContacto {
+    display: grid;
+    grid-template-areas: 
+                        "textoContacto textoContacto"
+                        "formulario mapa";
+
+}
+
 .textoContacto,
 #mainContacto {
     margin: 0.5rem;
@@ -346,35 +349,48 @@ main {
 }
 
 .textoContacto {
+    grid-area: textoContacto;
     text-align: justify;
     padding-bottom: 15px;
+    width: 60%;
 }
 
-#mainContacto {
-    display: flex;
 
+form{
+    grid-area: formulario;
 }
-
 map {
-    display: flex;
-    float: right;
+    grid-area: mapa;
 
 }
+@media (max-width: 576px){
+    #mainContacto {
+        display: grid;
+        grid-template-areas: 
+                            "textoContacto"
+                            "formulario"
+                            "mapa";
+     gap: 3rem;
+    }
 
+}
 /*FIN CONTACTO*/
 
 footer {
     grid-area: footer;
     background-color: #87BBA2;
-    width: 100%;
     align-items: flex-end;
-    color: white;
+    color: black;
+    font-size: larger;
+    
+   
 
 }
 
 footer p,
 img {
     margin: 0.5rem;
+   
 }
 
 
