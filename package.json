@@ -1,0 +1,25 @@
+{
+  "name": "nutri",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"node-sass --include-path scss scss-app.scss css-main.css",
+    "watch-scss": "nodemon -e scss -x \"npmrun build-css \"" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emsa17/nutri.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emsa17/nutri/issues"
+  },
+  "homepage": "https://github.com/emsa17/nutri#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
