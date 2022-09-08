@@ -30,6 +30,7 @@ body {
 /*FIN LOGO*/
 
 
+
 /*---NAV---*/
 
 
@@ -60,11 +61,13 @@ nav li:hover {
         background-color: #87BBA2;
     }
 }
-@media (max-width:675px){
-    #offcanvasDarkNavbar{
+
+@media (max-width:675px) {
+    #offcanvasDarkNavbar {
         width: 30%;
     }
 }
+
 /*--FIN NAV---*/
 
 
@@ -182,7 +185,7 @@ main {
 #seccionPlanes {
     padding-top: 2rem;
     display: grid;
-    
+
     grid-template-areas: "consultas planAlimen controles";
     gap: 2rem;
 }
@@ -339,34 +342,36 @@ main {
 #mainContacto {
     display: grid;
     grid-template-areas: "textContacto textContacto"
-                          "formulario map"  ;
+        "formulario map";
 
 }
 
 
-#form{
+#form {
     grid-area: formulario;
     width: 100%;
 }
+
 #mapa {
     grid-area: map;
-    
-    
+
+
 
 }
-@media (max-width: 657px){
+
+@media (max-width: 657px) {
     #mainContacto {
         display: grid;
-        grid-template-areas: 
-                            "textContacto"
-                            "formulario"
-                            "map";
+        grid-template-areas:
+            "textContacto"
+            "formulario"
+            "map";
     }
-   
+
     #mapa {
         width: 80%;
         padding-top: 20px;
-        
+
     }
 }
 
