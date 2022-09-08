@@ -24,34 +24,20 @@ body {
 
 #logo {
     width: 200px;
+    padding-top: 40px;
 }
 
 /*FIN LOGO*/
 
 
 /*---NAV---*/
+
+
 nav {
-    grid-area: nav;
-    padding-left: 1rem;
-    background-color: #87BBA2;
     font-size: x-large;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-
-}
-
-li {
-    float: left;
-}
-
 li a {
-    display: block;
-    color: white;
     text-align: center;
     padding: 16px;
     text-decoration: none;
@@ -67,12 +53,18 @@ nav li:hover {
 
 }
 
+
 @keyframes efectosNav {
     0% {
-        background-color: whitesmoke
+        color: aqua;
+        background-color: #87BBA2;
     }
 }
-
+@media (max-width:675px){
+    #offcanvasDarkNavbar{
+        width: 30%;
+    }
+}
 /*--FIN NAV---*/
 
 
@@ -187,22 +179,23 @@ main {
 /*PAGE SERVICIOS*/
 
 
-.seccionPlanes {
+#seccionPlanes {
     padding-top: 2rem;
     display: grid;
+    
     grid-template-areas: "consultas planAlimen controles";
     gap: 2rem;
 }
 
-.consultas {
+#consultas {
     grid-area: consultas;
 }
 
-.planAlimen {
+#planAlimen {
     grid-area: planAlimen;
 }
 
-.controles {
+#controles {
     grid-area: controles;
 }
 
@@ -212,12 +205,12 @@ main {
 
 
 /*----EFECTOSSS----*/
-#efects {
+#seccionPlanes {
 
     text-align: justify;
 }
 
-#efects:hover {
+#seccionPlanes .col-12:hover {
     animation-name: movPlanes;
     animation-iteration-count: inherit;
     animation-timing-function: ease-in;
@@ -233,8 +226,8 @@ main {
 }
 
 /*--------MEDIA QUERI-------------*/
-@media (max-width: 576px) {
-    .seccionPlanes {
+@media (max-width: 675px) {
+    #seccionPlanes {
         padding-top: 2rem;
         display: grid;
         grid-template-areas: "consultas"
@@ -329,6 +322,8 @@ main {
 #acercaDeMi {
     padding-top: 2%;
     width: 70%;
+    display: flex;
+    justify-content: center;
 
 
 
@@ -341,36 +336,39 @@ main {
 /*PAGE CONTACTO*/
 
 
-
-
-
-/*
 #mainContacto {
     display: grid;
+    grid-template-areas: "textContacto textContacto"
+                          "formulario map"  ;
 
 }
 
-.textoContacto {
-    grid-area: textoContacto;
-  
-}
-form{
+
+#form{
     grid-area: formulario;
+    width: 100%;
 }
-map {
-    grid-area: mapa;
+#mapa {
+    grid-area: map;
+    
+    
 
 }
 @media (max-width: 657px){
     #mainContacto {
         display: grid;
         grid-template-areas: 
-                            "textoContacto"
+                            "textContacto"
                             "formulario"
-                            "mapa";
+                            "map";
     }
-
-}*/
+   
+    #mapa {
+        width: 80%;
+        padding-top: 20px;
+        
+    }
+}
 
 /*FIN CONTACTO*/
 
