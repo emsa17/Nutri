@@ -64,7 +64,7 @@ nav li:hover {
 
 @media (max-width:675px) {
     #offcanvasDarkNavbar {
-        width: 30%;
+        width: 40%;
     }
 }
 
@@ -250,7 +250,10 @@ main {
 #bodyInfo {
     background-image: linear-gradient(to right, whitesmoke, #c9c16a);
 }
+/*----CARROUSEL---*/
 
+
+/*----FIN CARROUSEL---*/
 .infoEducativa {
     padding-top: 2rem;
     display: grid;
@@ -349,11 +352,12 @@ main {
 
 #form {
     grid-area: formulario;
-    width: 100%;
+    
 }
 
 #mapa {
     grid-area: map;
+    
 
 
 
@@ -369,11 +373,11 @@ main {
     }
 
     #mapa {
-        width: 80%;
         padding-top: 20px;
 
     }
 }
+
 
 /*FIN CONTACTO*/
 
