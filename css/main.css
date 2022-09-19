@@ -100,6 +100,16 @@ main #mito3:hover {
   0% {
     background-color: #989036; } }
 
+main #seccionPlanes #consultas:hover, main #seccionPlanes #planAlimen:hover, main #seccionPlanes #controles:hover {
+  animation-name: movPlanes;
+  animation-iteration-count: inherit;
+  animation-timing-function: ease-in;
+  animation-duration: 4s; }
+
+@keyframes movPlanes {
+  0% {
+    background-color: #989036; } }
+
 main #seccionPlanes {
   padding-top: 2rem;
   display: grid;
@@ -108,41 +118,17 @@ main #seccionPlanes {
   justify-content: center;
   text-align: center; }
   main #seccionPlanes #consultas {
-    grid-area: consultas; }
-    main #seccionPlanes #consultas:hover {
-      animation-name: movPlanes;
-      animation-iteration-count: inherit;
-      animation-timing-function: ease-in;
-      animation-duration: 4s;
-      border-radius: 1rem; }
-
-@keyframes movPlanes {
-  0% {
-    background-color: #989036; } }
+    grid-area: consultas;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px; }
   main #seccionPlanes #planAlimen {
-    grid-area: planAlimen; }
-    main #seccionPlanes #planAlimen:hover {
-      animation-name: movPlanes;
-      animation-iteration-count: inherit;
-      animation-timing-function: ease-in;
-      animation-duration: 4s;
-      border-radius: 1rem; }
-
-@keyframes movPlanes {
-  0% {
-    background-color: #989036; } }
+    grid-area: planAlimen;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px; }
   main #seccionPlanes #controles {
-    grid-area: controles; }
-    main #seccionPlanes #controles:hover {
-      animation-name: movPlanes;
-      animation-iteration-count: inherit;
-      animation-timing-function: ease-in;
-      animation-duration: 4s;
-      border-radius: 1rem; }
-
-@keyframes movPlanes {
-  0% {
-    background-color: #989036; } }
+    grid-area: controles;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px; }
 
 /*----MEDIA QUERI----*/
 @media (max-width: 675px) {

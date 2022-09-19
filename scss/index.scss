@@ -1,29 +1,31 @@
-body{
+body {
     .tituloActualidad {
         text-align: center;
         padding-top: 30px;
-    
-    
-    
+
+
+
     }
+
     #temasActualidad {
         text-align: center;
         padding-top: 20px;
         justify-content: center;
-    
+
     }
 
     #portada {
         display: flex;
         justify-content: center;
+
         img {
             width: 500px;
             filter: brightness(1.1);
             mix-blend-mode: multiply;
-        
-        
-        
+
+
+
         }
-    }   
+    }
 
 }

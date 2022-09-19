@@ -1,3 +1,26 @@
+%efectosServicios {
+    &:hover {
+        animation-name: movPlanes;
+        animation-iteration-count: inherit;
+        animation-timing-function: ease-in;
+        animation-duration: 4s;
+
+
+        @keyframes movPlanes {
+            0% {
+                background-color: $efecto-color;
+            }
+        }
+    }
+}
+
+@mixin sombra-borde {
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px;
+
+}
+
+
 main {
     #seccionPlanes {
         padding-top: 2rem;
@@ -10,57 +33,27 @@ main {
 
         #consultas {
             grid-area: consultas;
+            @extend %efectosServicios;
+            @include sombra-borde;
 
-            &:hover {
-                animation-name: movPlanes;
-                animation-iteration-count: inherit;
-                animation-timing-function: ease-in;
-                animation-duration: 4s;
-                border-radius: 1rem;
-
-                @keyframes movPlanes {
-                    0% {
-                        background-color: $efecto-color;
-                    }
-                }
-            }
         }
 
         #planAlimen {
             grid-area: planAlimen;
+            @extend %efectosServicios;
+            @include sombra-borde;
 
-            &:hover {
-                animation-name: movPlanes;
-                animation-iteration-count: inherit;
-                animation-timing-function: ease-in;
-                animation-duration: 4s;
-                border-radius: 1rem;
-
-                @keyframes movPlanes {
-                    0% {
-                        background-color: $efecto-color;
-                    }
-                }
-            }
         }
 
         #controles {
             grid-area: controles;
+            @extend %efectosServicios;
+            @include sombra-borde;
 
-            &:hover {
-                animation-name: movPlanes;
-                animation-iteration-count: inherit;
-                animation-timing-function: ease-in;
-                animation-duration: 4s;
-                border-radius: 1rem;
-
-                @keyframes movPlanes {
-                    0% {
-                        background-color: $efecto-color;
-                    }
-                }
-            }
         }
+
+
+
     }
 }
 

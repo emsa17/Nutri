@@ -1,30 +1,30 @@
 nav {
     font-size: x-large;
 
-    li{
-    &:hover {
-        animation-name: efectosNav;
-        animation-iteration-count: inherit;
-        animation-timing-function: ease-in;
-        animation-duration: 4s;
-        border-radius: 1rem;
+    li {
+        &:hover {
+            animation-name: efectosNav;
+            animation-iteration-count: inherit;
+            animation-timing-function: ease-in;
+            animation-duration: 4s;
+            border-radius: 1rem;
 
-        @keyframes efectosNav {
-            0% {
-                color: aqua;
-                background-color: #87BBA2;
+            @keyframes efectosNav {
+                0% {
+                    color: aqua;
+                    background-color: #87BBA2;
+                }
+
             }
 
         }
 
+        a {
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
     }
-
-    a {
-        text-align: center;
-        padding: 16px;
-        text-decoration: none;
-    }
-}
 
 }
 
