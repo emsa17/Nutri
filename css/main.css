@@ -120,15 +120,15 @@ main #seccionPlanes {
   main #seccionPlanes #consultas {
     grid-area: consultas;
     border-radius: 1rem;
-    box-shadow: 5px 5px 5px; }
+    box-shadow: 6px 6px 6px; }
   main #seccionPlanes #planAlimen {
     grid-area: planAlimen;
     border-radius: 1rem;
-    box-shadow: 5px 5px 5px; }
+    box-shadow: 6px 6px 6px; }
   main #seccionPlanes #controles {
     grid-area: controles;
     border-radius: 1rem;
-    box-shadow: 5px 5px 5px; }
+    box-shadow: 6px 6px 6px; }
 
 /*----MEDIA QUERI----*/
 @media (max-width: 675px) {
