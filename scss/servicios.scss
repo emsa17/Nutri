@@ -1,0 +1,77 @@
+main {
+    #seccionPlanes {
+        padding-top: 2rem;
+        display: grid;
+
+        grid-template-areas: "consultas planAlimen controles";
+        gap: 2rem;
+        justify-content: center;
+        text-align: center;
+
+        #consultas {
+            grid-area: consultas;
+
+            &:hover {
+                animation-name: movPlanes;
+                animation-iteration-count: inherit;
+                animation-timing-function: ease-in;
+                animation-duration: 4s;
+                border-radius: 1rem;
+
+                @keyframes movPlanes {
+                    0% {
+                        background-color: $efecto-color;
+                    }
+                }
+            }
+        }
+
+        #planAlimen {
+            grid-area: planAlimen;
+
+            &:hover {
+                animation-name: movPlanes;
+                animation-iteration-count: inherit;
+                animation-timing-function: ease-in;
+                animation-duration: 4s;
+                border-radius: 1rem;
+
+                @keyframes movPlanes {
+                    0% {
+                        background-color: $efecto-color;
+                    }
+                }
+            }
+        }
+
+        #controles {
+            grid-area: controles;
+
+            &:hover {
+                animation-name: movPlanes;
+                animation-iteration-count: inherit;
+                animation-timing-function: ease-in;
+                animation-duration: 4s;
+                border-radius: 1rem;
+
+                @keyframes movPlanes {
+                    0% {
+                        background-color: $efecto-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*----MEDIA QUERI----*/
+@media (max-width: 675px) {
+    #seccionPlanes {
+        padding-top: 2rem;
+        display: grid;
+        grid-template-areas: "consultas"
+            "planAlimen"
+            "controles";
+        gap: 2rem;
+    }
+}

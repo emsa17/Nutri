@@ -1,0 +1,32 @@
+main {
+    #mainContacto {
+        display: grid;
+        grid-template-areas: "textContacto textContacto"
+            "formulario map";
+
+        #form {
+            grid-area: formulario;
+
+        }
+
+        #mapa {
+            grid-area: map;
+
+        }
+    }
+    @media (max-width: 657px) {
+        #mainContacto {
+            display: grid;
+            grid-template-areas:
+                "textContacto"
+                "formulario"
+                "map";
+
+            #mapa {
+                padding-top: 20px;
+
+            }
+        }
+    }
+
+}

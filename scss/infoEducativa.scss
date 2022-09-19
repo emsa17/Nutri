@@ -1,3 +1,49 @@
-/*--Carrousel--*/
+main {
+    .derribandoMitos {
+        text-align: center;
+        padding-top: 20px;
+    }
 
+    .infoEducativa {
+        padding-top: 2rem;
+        gap: 2rem;
+        text-align: center;
 
+        .subtitulo {
+
+            text-align: center;
+        }
+
+    }
+
+    #mito1:hover {
+        animation-name: efectos;
+        animation-iteration-count: inherit;
+        animation-timing-function: ease-in;
+        animation-duration: 4s;
+        border-radius: 1rem;
+
+    }
+    #mito2:hover {
+        animation-name: efectos;
+        animation-iteration-count: inherit;
+        animation-timing-function: ease-in;
+        animation-duration: 4s;
+        border-radius: 1rem;
+
+    }
+    #mito3:hover {
+        animation-name: efectos;
+        animation-iteration-count: inherit;
+        animation-timing-function: ease-in;
+        animation-duration: 4s;
+        border-radius: 1rem;
+
+    }
+
+    @keyframes efectos {
+        0% {
+            background-color: #989036;
+        }
+    }  
+}

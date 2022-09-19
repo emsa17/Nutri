@@ -1,16 +1,40 @@
+@import 'base/colors.scss';
+@import 'base/tipografia.scss';
+@import 'contacto.scss';
+@import 'footer.scss';
+@import 'header.scss';
+@import 'index.scss';
+@import 'infoEducativa.scss';
+@import 'servicios.scss';
 
-/*----Home----*/
+
+
+
+
 body {
-    background-image: linear-gradient(to right, whitesmoke, #c9c16a);
+    background-image: linear-gradient(to right, whitesmoke, $backround-page);
+    font-family: $primary-typography;
 
-    footer{
-        background-image: linear-gradient(to right, whitesmoke, #c9c16a);
+    #logo {
+        width: 200px;
+        padding-top: 40px;
+    }
+
+    main {
+        display: flex;
+        font-size: x-large;
+        justify-content: center;
+        align-items: center;
+        margin: 0.5rem;
 
     }
 
+    @media(max-width: 576px) {
+        #portada {
+            img {
+                width: 300px;
+            }
+        }
+    }
 
-} 
-
-@import 'infoEducativa.scss';
-
-
+}
