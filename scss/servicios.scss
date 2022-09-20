@@ -22,6 +22,9 @@
 
 
 main {
+    #subtituloServicios{
+        text-align: center;
+    }
     #seccionPlanes {
         padding-top: 2rem;
         display: grid;
@@ -51,20 +54,20 @@ main {
             @include sombra-borde;
 
         }
+    }
 
-
-
+    /*----MEDIA QUERI----*/
+    @media (max-width: 675px) {
+        #seccionPlanes {
+            padding-top: 2rem;
+            display: grid;
+            grid-template-areas: "consultas"
+                "planAlimen"
+                "controles";
+            gap: 2rem;
+            text-align: justify;
+        }
     }
 }
 
-/*----MEDIA QUERI----*/
-@media (max-width: 675px) {
-    #seccionPlanes {
-        padding-top: 2rem;
-        display: grid;
-        grid-template-areas: "consultas"
-            "planAlimen"
-            "controles";
-        gap: 2rem;
-    }
-}
+

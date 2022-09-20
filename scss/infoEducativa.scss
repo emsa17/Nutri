@@ -1,46 +1,106 @@
+%alineado-centro {
+    text-align: center;
+    box-shadow: 6px 6px;
+
+
+}
+
+
+@mixin sombra-borde {
+    border-radius: 1rem;
+    box-shadow: 6px 6px 6px;
+
+}
+
 main {
+    #carro {
+        width: 200px;
+        height: 150px;
+
+    }
+
     .derribandoMitos {
         text-align: center;
         padding-top: 20px;
+        @include sombra-borde;
     }
 
     .infoEducativa {
-        padding-top: 2rem;
         gap: 2rem;
         text-align: center;
 
-        .subtitulo {
 
-            text-align: center;
+    }
+
+    #mito1 {
+        @include sombra-borde;
+        strong{
+            p{
+                padding-top: 20px;
+            }
         }
 
+        .subtitulo {
+            @extend %alineado-centro;
+
+        }
+
+        &:hover {
+            animation-name: efectos;
+            animation-iteration-count: inherit;
+            animation-timing-function: ease-in;
+            animation-duration: 4s;
+            border-radius: 1rem;
+
+
+        }
     }
 
-    #mito1:hover {
-        animation-name: efectos;
-        animation-iteration-count: inherit;
-        animation-timing-function: ease-in;
-        animation-duration: 4s;
-        border-radius: 1rem;
+    #mito2 {
+        @include sombra-borde;
+        strong{
+            p{
+                padding-top: 20px;
+            }
+        }
 
+        .subtitulo {
+            @extend %alineado-centro;
+
+        }
+
+        &:hover {
+            animation-name: efectos;
+            animation-iteration-count: inherit;
+            animation-timing-function: ease-in;
+            animation-duration: 4s;
+            border-radius: 1rem;
+
+        }
     }
 
-    #mito2:hover {
-        animation-name: efectos;
-        animation-iteration-count: inherit;
-        animation-timing-function: ease-in;
-        animation-duration: 4s;
-        border-radius: 1rem;
+    #mito3 {
+        @include sombra-borde;
+        strong{
+            p{
+                padding-top: 20px;
+            }
+        }
 
-    }
+        .subtitulo {
+            @extend %alineado-centro;
 
-    #mito3:hover {
-        animation-name: efectos;
-        animation-iteration-count: inherit;
-        animation-timing-function: ease-in;
-        animation-duration: 4s;
-        border-radius: 1rem;
+        }
 
+        &:hover {
+            animation-name: efectos;
+            animation-iteration-count: inherit;
+            animation-timing-function: ease-in;
+            animation-duration: 4s;
+            border-radius: 1rem;
+
+
+        }
     }
 
     @keyframes efectos {
