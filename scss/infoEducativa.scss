@@ -34,8 +34,9 @@ main {
 
     #mito1 {
         @include sombra-borde;
-        strong{
-            p{
+
+        strong {
+            p {
                 padding-top: 20px;
             }
         }
@@ -58,8 +59,9 @@ main {
 
     #mito2 {
         @include sombra-borde;
-        strong{
-            p{
+
+        strong {
+            p {
                 padding-top: 20px;
             }
         }
@@ -81,8 +83,9 @@ main {
 
     #mito3 {
         @include sombra-borde;
-        strong{
-            p{
+
+        strong {
+            p {
                 padding-top: 20px;
             }
         }
