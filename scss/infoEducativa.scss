@@ -26,7 +26,7 @@ main {
         width: 500px;
     }
 
-    .container{
+    .container {
         padding-top: 40px;
     }
 
@@ -38,9 +38,9 @@ main {
 
         h2 {
             font-family: $tipografia-titulos;
-            
+
         }
-        
+
 
     }
 
@@ -52,7 +52,7 @@ main {
             font-family: $tipografia-parrafos;
         }
 
-       
+
     }
 
     #mito1 {
@@ -61,7 +61,7 @@ main {
         .subtitulo {
             @extend %alineado-centro;
             font-family: $tipografia-subtitulos;
-           
+
 
         }
 
@@ -71,7 +71,7 @@ main {
             }
         }
 
-        .textMitos{
+        .textMitos {
             font-family: $tipografia-parrafos;
         }
 
@@ -92,7 +92,7 @@ main {
 
         .subtitulo {
             @extend %alineado-centro;
-            font-family: $tipografia-subtitulos; 
+            font-family: $tipografia-subtitulos;
 
         }
 
@@ -103,7 +103,7 @@ main {
             }
         }
 
-        .textMitos{
+        .textMitos {
             font-family: $tipografia-parrafos;
         }
 
@@ -123,7 +123,7 @@ main {
         .subtitulo {
             @extend %alineado-centro;
             font-family: $tipografia-subtitulos;
-           
+
 
         }
 
@@ -133,7 +133,7 @@ main {
             }
         }
 
-        .textMitos{
+        .textMitos {
             font-family: $tipografia-parrafos;
         }
 

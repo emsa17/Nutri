@@ -17,7 +17,8 @@ section p {
 
 main #mainContacto {
   display: grid;
-  grid-template-areas: "textContacto textContacto" "formulario map"; }
+  grid-template-areas: "textContacto textContacto" "formulario map";
+  font-family: "Dosis"; }
   main #mainContacto #form {
     grid-area: formulario; }
   main #mainContacto #mapa {

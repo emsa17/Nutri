@@ -3,6 +3,8 @@ main {
         display: grid;
         grid-template-areas: "textContacto textContacto"
             "formulario map";
+        font-family: $tipografia-parrafos;
+
 
         #form {
             grid-area: formulario;

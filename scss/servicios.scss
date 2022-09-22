@@ -39,19 +39,19 @@ main {
         justify-content: center;
         text-align: center;
 
-        .subtituloServicios{
+        .subtituloServicios {
             font-family: $tipografia-subtitulos;
         }
-     
+
 
         #consultas {
             grid-area: consultas;
             @extend %efectosServicios;
             @include sombra-borde;
-            
-          .textPlanes{
-            font-family: $tipografia-parrafos;
-          }
+
+            .textPlanes {
+                font-family: $tipografia-parrafos;
+            }
 
         }
 
@@ -60,9 +60,9 @@ main {
             @extend %efectosServicios;
             @include sombra-borde;
 
-            .textPlanes{
+            .textPlanes {
                 font-family: $tipografia-parrafos;
-              }
+            }
 
         }
 
@@ -71,14 +71,14 @@ main {
             @extend %efectosServicios;
             @include sombra-borde;
 
-            .textPlanes{
+            .textPlanes {
                 font-family: $tipografia-parrafos;
-              }
+            }
 
         }
     }
 
- /*FIN PLANES*/
+    /*FIN PLANES*/
 
 
     /*----MEDIA QUERI----*/

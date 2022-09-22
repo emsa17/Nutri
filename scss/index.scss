@@ -1,5 +1,3 @@
-
-
 body {
 
     #temasActualidad {
@@ -13,45 +11,47 @@ body {
 
     }
 
-   main{
-    
-    .tituloActualidad{
-        font-family: $tipografia-titulos;
-        font-size: calc(4rem + .9vw);
-        text-align: center;
-        padding-top: 30px;
+    main {
+
+        .tituloActualidad {
+            font-family: $tipografia-titulos;
+            font-size: calc(4rem + .9vw);
+            text-align: center;
+            padding-top: 30px;
 
 
 
-    }
-        #agua{
+        }
+
+        #agua {
             grid-area: agua;
             border-radius: 1rem;
             background-color: $color-temas-actualidad;
-            
+
         }
-        #huertaOrganica{
+
+        #huertaOrganica {
             grid-area: huerta;
             border-radius: 1rem;
             background-color: $color-temas-actualidad;
         }
-        #quinoa{
+
+        #quinoa {
             grid-area: quinoa;
             border-radius: 1rem;
             background-color: $color-temas-actualidad;
         }
-   }
-    
-   
-@media(max-width: 675px){
-    #temasActualidad{
-        display: grid;
-        grid-template-areas: 
-                            "agua"
-                            "huerta"
-                            "quinoa";
     }
 
-}
-}
 
+    @media(max-width: 675px) {
+        #temasActualidad {
+            display: grid;
+            grid-template-areas:
+                "agua"
+                "huerta"
+                "quinoa";
+        }
+
+    }
+}
