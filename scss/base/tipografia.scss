@@ -1,3 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');*/
 
-$primary-typography: "Roboto Flex";
+
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');/*Título de navbar*/
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');/*Títulos*/
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');/*Subtítulos*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');/*Párrafos*/
+
+
+$tipografia-navbar: "Preahvihear";
+$tipografia-titulos: "Shadows Into Light";
+$tipografia-subtitulos: "Open Sans";
+$tipografia-parrafos: "Dosis";

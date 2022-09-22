@@ -1,5 +1,6 @@
 @import 'base/colors.scss';
 @import 'base/tipografia.scss';
+@import 'acercademi.scss';
 @import 'contacto.scss';
 @import 'footer.scss';
 @import 'header.scss';
@@ -13,8 +14,7 @@
 
 body {
     background-image: linear-gradient(to right, whitesmoke, $backround-page);
-    font-family: $primary-typography;
-
+   
     #logo {
         width: 200px;
         padding-top: 100px;

@@ -1,4 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap");
+@charset "UTF-8";
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');*/
+@import url("https://fonts.googleapis.com/css2?family=Preahvihear&display=swap");
+/*Título de navbar*/
+@import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap");
+/*Títulos*/
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+/*Subtítulos*/
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+/*Párrafos*/
+h2 {
+  font-family: "Shadows Into Light"; }
+
+section p {
+  font-family: "Dosis"; }
+
 main #mainContacto {
   display: grid;
   grid-template-areas: "textContacto textContacto" "formulario map"; }
@@ -25,6 +41,10 @@ footer {
 
 nav {
   font-size: x-large; }
+  nav a {
+    text-decoration: none;
+    color: rgba(56, 161, 56, 0.829);
+    font-family: "Preahvihear"; }
   nav li:hover {
     animation-name: efectosNav;
     animation-iteration-count: inherit;
@@ -47,47 +67,79 @@ nav {
     color: aqua;
     background-color: #87BBA2; } }
 
-body .tituloActualidad {
-  font-size: xx-large;
-  text-align: center;
-  padding-top: 30px; }
-
 body #temasActualidad {
   text-align: center;
   padding-top: 20px;
-  justify-content: center; }
+  justify-content: center;
+  gap: 10px;
+  font-family: "Dosis";
+  display: grid;
+  grid-template-areas: "agua huerta quinoa"; }
 
-body #portada {
-  display: flex;
-  justify-content: center; }
-  body #portada img {
-    width: 500px;
-    filter: brightness(1.1);
-    mix-blend-mode: multiply; }
+body main .tituloActualidad {
+  font-family: "Shadows Into Light";
+  font-size: calc(4rem + .9vw);
+  text-align: center;
+  padding-top: 30px; }
+
+body main #agua {
+  grid-area: agua;
+  border-radius: 1rem;
+  background-color: #c8c27a; }
+
+body main #huertaOrganica {
+  grid-area: huerta;
+  border-radius: 1rem;
+  background-color: #c8c27a; }
+
+body main #quinoa {
+  grid-area: quinoa;
+  border-radius: 1rem;
+  background-color: #c8c27a; }
+
+@media (max-width: 675px) {
+  body #temasActualidad {
+    display: grid;
+    grid-template-areas: "agua" "huerta" "quinoa"; } }
 
 main #mito1 .subtitulo, main #mito2 .subtitulo, main #mito3 .subtitulo {
   text-align: center;
   box-shadow: 6px 6px; }
 
-main #carro {
-  width: 200px;
-  height: 150px; }
+#carro img {
+  mix-blend-mode: multiply;
+  border-radius: 30rem; }
+
+main .w-100 {
+  width: 500px; }
+
+main .container {
+  padding-top: 40px; }
 
 main .derribandoMitos {
   text-align: center;
   padding-top: 20px;
   border-radius: 1rem;
-  box-shadow: 6px 6px 6px; }
+  box-shadow: 6px 6px 6px;
+  font-size: calc(3rem + .9vw); }
+  main .derribandoMitos h2 {
+    font-family: "Shadows Into Light"; }
 
 main .infoEducativa {
   gap: 2rem;
   text-align: center; }
+  main .infoEducativa .textMitos {
+    font-family: "Dosis"; }
 
 main #mito1 {
   border-radius: 1rem;
   box-shadow: 6px 6px 6px; }
+  main #mito1 .subtitulo {
+    font-family: "Open Sans"; }
   main #mito1 strong p {
     padding-top: 20px; }
+  main #mito1 .textMitos {
+    font-family: "Dosis"; }
   main #mito1:hover {
     animation-name: efectos;
     animation-iteration-count: inherit;
@@ -98,8 +150,12 @@ main #mito1 {
 main #mito2 {
   border-radius: 1rem;
   box-shadow: 6px 6px 6px; }
+  main #mito2 .subtitulo {
+    font-family: "Open Sans"; }
   main #mito2 strong p {
     padding-top: 20px; }
+  main #mito2 .textMitos {
+    font-family: "Dosis"; }
   main #mito2:hover {
     animation-name: efectos;
     animation-iteration-count: inherit;
@@ -110,8 +166,12 @@ main #mito2 {
 main #mito3 {
   border-radius: 1rem;
   box-shadow: 6px 6px 6px; }
+  main #mito3 .subtitulo {
+    font-family: "Open Sans"; }
   main #mito3 strong p {
     padding-top: 20px; }
+  main #mito3 .textMitos {
+    font-family: "Dosis"; }
   main #mito3:hover {
     animation-name: efectos;
     animation-iteration-count: inherit;
@@ -134,9 +194,13 @@ main #seccionPlanes #consultas:hover, main #seccionPlanes #planAlimen:hover, mai
     background-color: #989036; } }
 
 main {
+  /*--PLANES--*/
+  /*FIN PLANES*/
   /*----MEDIA QUERI----*/ }
-  main #subtituloServicios {
-    text-align: center; }
+  main h2 {
+    font-family: "Shadows Into Light";
+    text-align: center;
+    font-size: calc(2rem + .9vw); }
   main #seccionPlanes {
     padding-top: 2rem;
     display: grid;
@@ -144,18 +208,26 @@ main {
     gap: 2rem;
     justify-content: center;
     text-align: center; }
+    main #seccionPlanes .subtituloServicios {
+      font-family: "Open Sans"; }
     main #seccionPlanes #consultas {
       grid-area: consultas;
       border-radius: 1rem;
       box-shadow: 6px 6px 6px; }
+      main #seccionPlanes #consultas .textPlanes {
+        font-family: "Dosis"; }
     main #seccionPlanes #planAlimen {
       grid-area: planAlimen;
       border-radius: 1rem;
       box-shadow: 6px 6px 6px; }
+      main #seccionPlanes #planAlimen .textPlanes {
+        font-family: "Dosis"; }
     main #seccionPlanes #controles {
       grid-area: controles;
       border-radius: 1rem;
       box-shadow: 6px 6px 6px; }
+      main #seccionPlanes #controles .textPlanes {
+        font-family: "Dosis"; }
   @media (max-width: 675px) {
     main #seccionPlanes {
       padding-top: 2rem;
@@ -165,8 +237,7 @@ main {
       text-align: justify; } }
 
 body {
-  background-image: linear-gradient(to right, whitesmoke, #c9c16a);
-  font-family: "Roboto Flex"; }
+  background-image: linear-gradient(to right, whitesmoke, #c9c16a); }
   body #logo {
     width: 200px;
     padding-top: 100px; }

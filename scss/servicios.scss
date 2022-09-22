@@ -22,10 +22,14 @@
 
 
 main {
-    #subtituloServicios {
+
+    h2 {
+        font-family: $tipografia-titulos;
         text-align: center;
+        font-size: calc(2rem + .9vw);
     }
 
+    /*--PLANES--*/
     #seccionPlanes {
         padding-top: 2rem;
         display: grid;
@@ -35,10 +39,19 @@ main {
         justify-content: center;
         text-align: center;
 
+        .subtituloServicios{
+            font-family: $tipografia-subtitulos;
+        }
+     
+
         #consultas {
             grid-area: consultas;
             @extend %efectosServicios;
             @include sombra-borde;
+            
+          .textPlanes{
+            font-family: $tipografia-parrafos;
+          }
 
         }
 
@@ -47,6 +60,10 @@ main {
             @extend %efectosServicios;
             @include sombra-borde;
 
+            .textPlanes{
+                font-family: $tipografia-parrafos;
+              }
+
         }
 
         #controles {
@@ -54,8 +71,15 @@ main {
             @extend %efectosServicios;
             @include sombra-borde;
 
+            .textPlanes{
+                font-family: $tipografia-parrafos;
+              }
+
         }
     }
+
+ /*FIN PLANES*/
+
 
     /*----MEDIA QUERI----*/
     @media (max-width: 675px) {

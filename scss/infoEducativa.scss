@@ -12,28 +12,58 @@
 
 }
 
-main {
-    #carro {
-        width: 200px;
-        height: 150px;
+#carro {
+    img {
+        mix-blend-mode: multiply;
+        border-radius: 30rem;
 
+    }
+
+}
+
+main {
+    .w-100 {
+        width: 500px;
+    }
+
+    .container{
+        padding-top: 40px;
     }
 
     .derribandoMitos {
         text-align: center;
         padding-top: 20px;
         @include sombra-borde;
+        font-size: calc(3rem + .9vw);
+
+        h2 {
+            font-family: $tipografia-titulos;
+            
+        }
+        
+
     }
 
     .infoEducativa {
         gap: 2rem;
         text-align: center;
 
+        .textMitos {
+            font-family: $tipografia-parrafos;
+        }
 
+       
     }
 
     #mito1 {
         @include sombra-borde;
+
+        .subtitulo {
+            @extend %alineado-centro;
+            font-family: $tipografia-subtitulos;
+           
+
+        }
 
         strong {
             p {
@@ -41,10 +71,10 @@ main {
             }
         }
 
-        .subtitulo {
-            @extend %alineado-centro;
-
+        .textMitos{
+            font-family: $tipografia-parrafos;
         }
+
 
         &:hover {
             animation-name: efectos;
@@ -60,15 +90,21 @@ main {
     #mito2 {
         @include sombra-borde;
 
+        .subtitulo {
+            @extend %alineado-centro;
+            font-family: $tipografia-subtitulos; 
+
+        }
+
+
         strong {
             p {
                 padding-top: 20px;
             }
         }
 
-        .subtitulo {
-            @extend %alineado-centro;
-
+        .textMitos{
+            font-family: $tipografia-parrafos;
         }
 
         &:hover {
@@ -84,15 +120,21 @@ main {
     #mito3 {
         @include sombra-borde;
 
+        .subtitulo {
+            @extend %alineado-centro;
+            font-family: $tipografia-subtitulos;
+           
+
+        }
+
         strong {
             p {
                 padding-top: 20px;
             }
         }
 
-        .subtitulo {
-            @extend %alineado-centro;
-
+        .textMitos{
+            font-family: $tipografia-parrafos;
         }
 
         &:hover {

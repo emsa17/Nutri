@@ -1,5 +1,12 @@
 nav {
     font-size: x-large;
+    a{
+
+        text-decoration: none;
+        color: rgba(56, 161, 56, 0.829);
+        font-family:$tipografia-navbar;
+    
+    }
 
     li {
         &:hover {
