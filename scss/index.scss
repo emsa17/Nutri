@@ -1,3 +1,9 @@
+@mixin sombra-borde {
+    border-radius: 1rem;
+
+}
+
+
 body {
 
     #temasActualidad {
@@ -28,30 +34,73 @@ body {
             border-radius: 1rem;
             background-color: $color-temas-actualidad;
 
+            h3 {
+                padding-top: 30px;
+            }
+
+            img {
+                padding-top: 15px;
+                @include sombra-borde;
+                align-self: center;
+                width: 50%;
+            }
+
+            p {
+                padding-top: 2px;
+            }
+
+
         }
 
         #huertaOrganica {
             grid-area: huerta;
             border-radius: 1rem;
             background-color: $color-temas-actualidad;
-        }
 
-        #quinoa {
-            grid-area: quinoa;
-            border-radius: 1rem;
-            background-color: $color-temas-actualidad;
+            h3 {
+                padding-top: 10px;
+            }
+
+            img {
+                padding-top: 15px;
+                @include sombra-borde;
+                align-self: center;
+                width: 50%;
+            }
+
         }
     }
 
+    #quinoa {
+        grid-area: quinoa;
+        border-radius: 1rem;
+        background-color: $color-temas-actualidad;
 
-    @media(max-width: 675px) {
-        #temasActualidad {
-            display: grid;
-            grid-template-areas:
-                "agua"
-                "huerta"
-                "quinoa";
+        h3 {
+            padding-top: 30px;
         }
 
+        img {
+            padding-top: 15px;
+            @include sombra-borde;
+            align-self: center;
+            width: 50%;
+        }
+
+        p {
+            padding-top: -5px;
+        }
     }
+}
+
+
+@media(max-width: 675px) {
+    #temasActualidad {
+        display: grid;
+        grid-template-areas:
+            "agua"
+            "huerta"
+            "quinoa";
+    }
+
 }

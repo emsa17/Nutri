@@ -20,13 +20,23 @@
 
 }
 
+/*-------------------------------------------*/
+
+
+
+
+
 
 main {
 
-    h2 {
+    #subtituloServicios {
         font-family: $tipografia-titulos;
         text-align: center;
-        font-size: calc(2rem + .9vw);
+
+        h2 {
+            font-size: calc(2rem + .9vw);
+        }
+
     }
 
     /*--PLANES--*/
@@ -39,9 +49,6 @@ main {
         justify-content: center;
         text-align: center;
 
-        .subtituloServicios {
-            font-family: $tipografia-subtitulos;
-        }
 
 
         #consultas {
@@ -91,6 +98,7 @@ main {
                 "controles";
             gap: 2rem;
             text-align: justify;
+
         }
     }
 }

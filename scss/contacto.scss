@@ -1,9 +1,28 @@
+/*body {
+    background: url('../img/carro1.jpeg');
+    background-repeat: no-repeat;
+    width: max-content;
+
+}*/
+
 main {
     #mainContacto {
         display: grid;
         grid-template-areas: "textContacto textContacto"
             "formulario map";
         font-family: $tipografia-parrafos;
+
+        h2 {
+            background-color: #c8c27a;
+            font-family: $tipografia-navbar;
+            background: opacity($color: #f4f1f1);
+
+
+        }
+
+        #textoContacto {
+            padding-top: 30px;
+        }
 
 
         #form {

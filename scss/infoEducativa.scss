@@ -34,10 +34,10 @@ main {
         text-align: center;
         padding-top: 20px;
         @include sombra-borde;
-        font-size: calc(3rem + .9vw);
 
         h2 {
             font-family: $tipografia-titulos;
+            font-size: calc(3rem + .9vw);
 
         }
 
