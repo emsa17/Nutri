@@ -3,6 +3,24 @@
 
 }
 
+%efectosIndex{
+    &:hover {
+        animation-name: movIndex;
+        animation-iteration-count: inherit;
+        animation-timing-function: ease-in;
+        animation-duration: 4s;
+
+
+        @keyframes movIndex{
+            0% {
+                background-color: $efecto-color-index;
+            }
+        }
+    }
+}
+
+/*--------------------------------------------------*/
+
 
 body {
 
@@ -32,7 +50,8 @@ body {
         #agua {
             grid-area: agua;
             border-radius: 1rem;
-            background-color: $color-temas-actualidad;
+            /*background-color: $color-temas-actualidad;*/
+            @extend %efectosIndex;
 
             h3 {
                 padding-top: 30px;
@@ -42,7 +61,7 @@ body {
                 padding-top: 15px;
                 @include sombra-borde;
                 align-self: center;
-                width: 50%;
+                width: 55%;
             }
 
             p {
@@ -55,7 +74,8 @@ body {
         #huertaOrganica {
             grid-area: huerta;
             border-radius: 1rem;
-            background-color: $color-temas-actualidad;
+            /*background-color: $color-temas-actualidad;*/
+            @extend %efectosIndex;
 
             h3 {
                 padding-top: 10px;
@@ -65,7 +85,7 @@ body {
                 padding-top: 15px;
                 @include sombra-borde;
                 align-self: center;
-                width: 50%;
+                width: 45%;
             }
 
         }
@@ -74,8 +94,9 @@ body {
     #quinoa {
         grid-area: quinoa;
         border-radius: 1rem;
-        background-color: $color-temas-actualidad;
-
+        /*background-color: $color-temas-actualidad;*/
+        @extend %efectosIndex;
+        
         h3 {
             padding-top: 30px;
         }

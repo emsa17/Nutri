@@ -22,18 +22,16 @@
 }
 
 main {
-    .w-100 {
-        width: 500px;
-    }
+
 
     .container {
         padding-top: 40px;
     }
 
-    .derribandoMitos {
+    #derribandoMitos {
         text-align: center;
         padding-top: 20px;
-        @include sombra-borde;
+        
 
         h2 {
             font-family: $tipografia-titulos;
@@ -44,18 +42,35 @@ main {
 
     }
 
-    .infoEducativa {
+    #infoEducativa {
         gap: 2rem;
         text-align: center;
+        display: grid;
+        grid-template-areas: "mito1 mito2 mito3"
+                              ;
+        padding-top: 20px;
 
         .textMitos {
             font-family: $tipografia-parrafos;
+        }
+        #redirigirContacto{
+            display: flex;
+            justify-items: center;
+            background-color:  rgba(84, 179, 84, 0.829);
+            border-radius: 3rem;
+            
+            a{ 
+                font-size: larger;
+                color: black;
+               
+            }
         }
 
 
     }
 
     #mito1 {
+        grid-area: mito1;
         @include sombra-borde;
 
         .subtitulo {
@@ -88,6 +103,7 @@ main {
     }
 
     #mito2 {
+        grid-area: mito2;
         @include sombra-borde;
 
         .subtitulo {
@@ -118,6 +134,7 @@ main {
     }
 
     #mito3 {
+        grid-area: mito3;
         @include sombra-borde;
 
         .subtitulo {
