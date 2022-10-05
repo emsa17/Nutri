@@ -64,11 +64,6 @@ nav {
     animation-timing-function: ease-in;
     animation-duration: 4s;
     border-radius: 1rem; }
-
-@keyframes efectosNav {
-  0% {
-    color: aqua;
-    background-color: #87BBA2; } }
   nav li a {
     text-align: center;
     padding: 16px;
@@ -78,7 +73,7 @@ nav {
 @keyframes efectosNav {
   0% {
     color: aqua;
-    background-color: #87BBA2; } }
+    background-color: #989036; } }
 
 body main #agua:hover, body main #huertaOrganica:hover, body #quinoa:hover {
   animation-name: movIndex;
@@ -155,6 +150,7 @@ main #mito1 .subtitulo, main #mito2 .subtitulo, main #mito3 .subtitulo {
   text-align: center;
   box-shadow: 6px 6px; }
 
+/*--------------------------------*/
 #carro img {
   mix-blend-mode: multiply;
   border-radius: 30rem; }

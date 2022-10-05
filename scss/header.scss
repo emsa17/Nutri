@@ -17,13 +17,6 @@ nav {
             animation-duration: 4s;
             border-radius: 1rem;
 
-            @keyframes efectosNav {
-                0% {
-                    color: aqua;
-                    background-color: #87BBA2;
-                }
-
-            }
 
         }
 
@@ -42,6 +35,6 @@ nav {
 @keyframes efectosNav {
     0% {
         color: aqua;
-        background-color: #87BBA2;
+        background-color:  #989036;
     }
 }
