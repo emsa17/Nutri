@@ -16,18 +16,9 @@
 /*--------------------------------*/
 
 
-#carro {
-    img {
-        mix-blend-mode: multiply;
-        border-radius: 30rem;
 
-    }
-
-}
 
 main {
-
-
     .container {
         padding-top: 40px;
     }
@@ -50,7 +41,8 @@ main {
         gap: 2rem;
         text-align: center;
         display: grid;
-        grid-template-areas: "mito1 mito2 mito3"
+        grid-template-areas: 
+                            "mito1 mito2 mito3"
                               ;
         padding-top: 20px;
 
@@ -174,4 +166,18 @@ main {
             background-color: #989036;
         }
     }
+
+    /*--MEDIAQUERI--*/
+
+    @media (max-width: 675px){
+        #infoEducativa{
+            display: grid;
+            grid-template-areas: "mito1"
+                                "mito2"
+                                "mito3";
+
+        }
+
+    }
+  
 }

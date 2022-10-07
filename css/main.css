@@ -75,7 +75,7 @@ nav {
     color: aqua;
     background-color: #989036; } }
 
-body main #agua:hover, body main #huertaOrganica:hover, body #quinoa:hover {
+body main #kale:hover, body main #huertaOrganica:hover, body #quinoa:hover {
   animation-name: movIndex;
   animation-iteration-count: inherit;
   animation-timing-function: ease-in;
@@ -93,7 +93,7 @@ body #temasActualidad {
   gap: 10px;
   font-family: "Dosis";
   display: grid;
-  grid-template-areas: "agua huerta quinoa"; }
+  grid-template-areas: "kale huerta quinoa"; }
 
 body main .tituloActualidad {
   font-family: "Shadows Into Light";
@@ -101,141 +101,135 @@ body main .tituloActualidad {
   text-align: center;
   padding-top: 30px; }
 
-body main #agua {
-  grid-area: agua;
+body main #kale {
+  grid-area: kale;
   border-radius: 1rem;
   /*background-color: $color-temas-actualidad;*/ }
-  body main #agua h3 {
-    padding-top: 30px; }
-  body main #agua img {
-    padding-top: 15px;
+  body main #kale img {
     border-radius: 1rem;
     align-self: center;
-    width: 55%; }
-  body main #agua p {
-    padding-top: 2px; }
+    width: 50%; }
 
 body main #huertaOrganica {
   grid-area: huerta;
   border-radius: 1rem;
-  /*background-color: $color-temas-actualidad;*/ }
-  body main #huertaOrganica h3 {
-    padding-top: 10px; }
+  /*background-color: $color-temas-actualidad;*/
+  padding-top: 25px; }
   body main #huertaOrganica img {
     padding-top: 15px;
     border-radius: 1rem;
     align-self: center;
     width: 45%; }
+  body main #huertaOrganica h3 {
+    padding-top: 30px; }
 
 body #quinoa {
   grid-area: quinoa;
   border-radius: 1rem;
-  /*background-color: $color-temas-actualidad;*/ }
-  body #quinoa h3 {
-    padding-top: 30px; }
+  /*background-color: $color-temas-actualidad;*/
+  padding-top: 25px; }
   body #quinoa img {
     padding-top: 15px;
     border-radius: 1rem;
     align-self: center;
     width: 50%; }
+  body #quinoa h3 {
+    padding-top: 30px; }
   body #quinoa p {
-    padding-top: -5px; }
+    padding-top: -10px; }
 
 @media (max-width: 675px) {
-  #temasActualidad {
+  body #temasActualidad {
     display: grid;
-    grid-template-areas: "agua" "huerta" "quinoa"; } }
+    grid-template-areas: "kale" "huerta" "quinoa"; } }
 
 main #mito1 .subtitulo, main #mito2 .subtitulo, main #mito3 .subtitulo {
   text-align: center;
   box-shadow: 6px 6px; }
 
 /*--------------------------------*/
-#carro img {
-  mix-blend-mode: multiply;
-  border-radius: 30rem; }
-
-main .container {
-  padding-top: 40px; }
-
-main #derribandoMitos {
-  text-align: center;
-  padding-top: 20px; }
-  main #derribandoMitos h2 {
-    font-family: "Shadows Into Light";
-    font-size: calc(3rem + .9vw); }
-
-main #infoEducativa {
-  gap: 2rem;
-  text-align: center;
-  display: grid;
-  grid-template-areas: "mito1 mito2 mito3";
-  padding-top: 20px; }
-  main #infoEducativa .textMitos {
-    font-family: "Dosis"; }
-  main #infoEducativa #redirigirContacto {
-    display: flex;
-    justify-items: center;
-    background-color: rgba(84, 179, 84, 0.829);
-    border-radius: 3rem; }
-    main #infoEducativa #redirigirContacto a {
-      font-size: larger;
-      color: black; }
-
-main #mito1 {
-  grid-area: mito1;
-  border-radius: 1rem;
-  box-shadow: 6px 6px 6px; }
-  main #mito1 .subtitulo {
-    font-family: "Open Sans"; }
-  main #mito1 strong p {
+main {
+  /*--MEDIAQUERI--*/ }
+  main .container {
+    padding-top: 40px; }
+  main #derribandoMitos {
+    text-align: center;
     padding-top: 20px; }
-  main #mito1 .textMitos {
-    font-family: "Dosis"; }
-  main #mito1:hover {
-    animation-name: efectos;
-    animation-iteration-count: inherit;
-    animation-timing-function: ease-in;
-    animation-duration: 4s;
-    border-radius: 1rem; }
-
-main #mito2 {
-  grid-area: mito2;
-  border-radius: 1rem;
-  box-shadow: 6px 6px 6px; }
-  main #mito2 .subtitulo {
-    font-family: "Open Sans"; }
-  main #mito2 strong p {
+    main #derribandoMitos h2 {
+      font-family: "Shadows Into Light";
+      font-size: calc(3rem + .9vw); }
+  main #infoEducativa {
+    gap: 2rem;
+    text-align: center;
+    display: grid;
+    grid-template-areas: "mito1 mito2 mito3";
     padding-top: 20px; }
-  main #mito2 .textMitos {
-    font-family: "Dosis"; }
-  main #mito2:hover {
-    animation-name: efectos;
-    animation-iteration-count: inherit;
-    animation-timing-function: ease-in;
-    animation-duration: 4s;
-    border-radius: 1rem; }
-
-main #mito3 {
-  grid-area: mito3;
-  border-radius: 1rem;
-  box-shadow: 6px 6px 6px; }
-  main #mito3 .subtitulo {
-    font-family: "Open Sans"; }
-  main #mito3 strong p {
-    padding-top: 20px; }
-  main #mito3 .textMitos {
-    font-family: "Dosis"; }
-  main #mito3:hover {
-    animation-name: efectos;
-    animation-iteration-count: inherit;
-    animation-timing-function: ease-in;
-    animation-duration: 4s;
-    border-radius: 1rem; }
+    main #infoEducativa .textMitos {
+      font-family: "Dosis"; }
+    main #infoEducativa #redirigirContacto {
+      display: flex;
+      justify-items: center;
+      background-color: rgba(84, 179, 84, 0.829);
+      border-radius: 3rem; }
+      main #infoEducativa #redirigirContacto a {
+        font-size: larger;
+        color: black; }
+  main #mito1 {
+    grid-area: mito1;
+    border-radius: 1rem;
+    box-shadow: 6px 6px 6px; }
+    main #mito1 .subtitulo {
+      font-family: "Open Sans"; }
+    main #mito1 strong p {
+      padding-top: 20px; }
+    main #mito1 .textMitos {
+      font-family: "Dosis"; }
+    main #mito1:hover {
+      animation-name: efectos;
+      animation-iteration-count: inherit;
+      animation-timing-function: ease-in;
+      animation-duration: 4s;
+      border-radius: 1rem; }
+  main #mito2 {
+    grid-area: mito2;
+    border-radius: 1rem;
+    box-shadow: 6px 6px 6px; }
+    main #mito2 .subtitulo {
+      font-family: "Open Sans"; }
+    main #mito2 strong p {
+      padding-top: 20px; }
+    main #mito2 .textMitos {
+      font-family: "Dosis"; }
+    main #mito2:hover {
+      animation-name: efectos;
+      animation-iteration-count: inherit;
+      animation-timing-function: ease-in;
+      animation-duration: 4s;
+      border-radius: 1rem; }
+  main #mito3 {
+    grid-area: mito3;
+    border-radius: 1rem;
+    box-shadow: 6px 6px 6px; }
+    main #mito3 .subtitulo {
+      font-family: "Open Sans"; }
+    main #mito3 strong p {
+      padding-top: 20px; }
+    main #mito3 .textMitos {
+      font-family: "Dosis"; }
+    main #mito3:hover {
+      animation-name: efectos;
+      animation-iteration-count: inherit;
+      animation-timing-function: ease-in;
+      animation-duration: 4s;
+      border-radius: 1rem; }
 
 @keyframes efectos {
   0% {
     background-color: #989036; } }
+  @media (max-width: 675px) {
+    main #infoEducativa {
+      display: grid;
+      grid-template-areas: "mito1" "mito2" "mito3"; } }
 
 main #seccionPlanes #consultas:hover, main #seccionPlanes #planAlimen:hover, main #seccionPlanes #controles:hover {
   animation-name: movPlanes;
