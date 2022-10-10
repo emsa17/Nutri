@@ -12,11 +12,10 @@
 
 #carro {
   padding-left: 40px;
-  width: 80%;
+  width: 90%;
 
   img {
     border-radius: 2rem;
-    width: 700px;
     height: 500px;
   }
 }
@@ -159,9 +158,6 @@ main {
   /*--MEDIAQUERI--*/
 
   @media (max-width: 675px) {
-    #carouselExampleDark{
-     height: 10px;
-    }
     #infoEducativa {
       display: grid;
       grid-template-areas:

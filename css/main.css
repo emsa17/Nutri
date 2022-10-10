@@ -152,10 +152,9 @@ main #mito1 .subtitulo, main #mito2 .subtitulo, main #mito3 .subtitulo {
 /*--------------------------------*/
 #carro {
   padding-left: 40px;
-  width: 80%; }
+  width: 90%; }
   #carro img {
     border-radius: 2rem;
-    width: 700px;
     height: 500px; }
 
 main {
@@ -243,8 +242,6 @@ main {
   0% {
     background-color: #989036; } }
   @media (max-width: 675px) {
-    main #carouselExampleDark {
-      height: 10px; }
     main #infoEducativa {
       display: grid;
       grid-template-areas: "mito1" "mito2" "mito3"; } }
