@@ -71,12 +71,12 @@ main {
 
     strong {
       p {
-        padding-top: 20px;
+        padding-top: 40px;
       }
     }
 
     .textMitos {
-      padding-top: 40px;
+      padding-top: 4px;
       font-family: $tipografia-parrafos;
     }
 
@@ -101,7 +101,7 @@ main {
 
     strong {
       p {
-        padding-top: 20px;
+        padding-top: 40px;
       }
     }
 
@@ -131,7 +131,7 @@ main {
 
     strong {
       p {
-        padding-top: 20px;
+        padding-top: 40px;
       }
     }
 
@@ -159,13 +159,8 @@ main {
   /*--MEDIAQUERI--*/
 
   @media (max-width: 675px) {
-    #carro {
-      width: 50%;
-      img {
-
-        width: 200px;
-        height: 200px;
-      }
+    #carouselExampleDark{
+     height: 10px;
     }
     #infoEducativa {
       display: grid;

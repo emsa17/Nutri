@@ -192,9 +192,9 @@ main {
     main #mito1 .subtitulo {
       font-family: "Open Sans"; }
     main #mito1 strong p {
-      padding-top: 20px; }
+      padding-top: 40px; }
     main #mito1 .textMitos {
-      padding-top: 40px;
+      padding-top: 4px;
       font-family: "Dosis"; }
     main #mito1:hover {
       animation-name: efectos;
@@ -210,7 +210,7 @@ main {
     main #mito2 .subtitulo {
       font-family: "Open Sans"; }
     main #mito2 strong p {
-      padding-top: 20px; }
+      padding-top: 40px; }
     main #mito2 .textMitos {
       padding-top: 4px;
       font-family: "Dosis"; }
@@ -228,7 +228,7 @@ main {
     main #mito3 .subtitulo {
       font-family: "Open Sans"; }
     main #mito3 strong p {
-      padding-top: 20px; }
+      padding-top: 40px; }
     main #mito3 .textMitos {
       padding-top: 4px;
       font-family: "Dosis"; }
@@ -243,11 +243,8 @@ main {
   0% {
     background-color: #989036; } }
   @media (max-width: 675px) {
-    main #carro {
-      width: 50%; }
-      main #carro img {
-        width: 200px;
-        height: 200px; }
+    main #carouselExampleDark {
+      height: 10px; }
     main #infoEducativa {
       display: grid;
       grid-template-areas: "mito1" "mito2" "mito3"; } }
