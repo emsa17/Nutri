@@ -10,9 +10,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
 /*Párrafos*/
 h2 {
-  font-family: "Shadows Into Light"; }
+  font-family: "Shadows Into Light";
+  font-size: calc(2rem + .9vw); }
 
 section p {
+  padding-top: 30px;
   font-family: "Dosis"; }
 
 /*body {
@@ -148,6 +150,14 @@ main #mito1 .subtitulo, main #mito2 .subtitulo, main #mito3 .subtitulo {
   box-shadow: 6px 6px; }
 
 /*--------------------------------*/
+#carro {
+  padding-left: 40px;
+  width: 80%; }
+  #carro img {
+    border-radius: 10rem;
+    width: 700px;
+    height: 700px; }
+
 main {
   /*--MEDIAQUERI--*/ }
   main .container {
@@ -156,8 +166,8 @@ main {
     text-align: center;
     padding-top: 20px; }
     main #derribandoMitos h2 {
-      font-family: "Shadows Into Light";
-      font-size: calc(3rem + .9vw); }
+      font-family: "Dosis";
+      font-size: calc(3rem + 0.9vw); }
   main #infoEducativa {
     gap: 2rem;
     text-align: center;
@@ -177,12 +187,14 @@ main {
   main #mito1 {
     grid-area: mito1;
     border-radius: 1rem;
-    box-shadow: 6px 6px 6px; }
+    box-shadow: 6px 6px 6px;
+    /*efectos de mouse sobre mito*/ }
     main #mito1 .subtitulo {
       font-family: "Open Sans"; }
     main #mito1 strong p {
       padding-top: 20px; }
     main #mito1 .textMitos {
+      padding-top: 40px;
       font-family: "Dosis"; }
     main #mito1:hover {
       animation-name: efectos;
@@ -193,12 +205,14 @@ main {
   main #mito2 {
     grid-area: mito2;
     border-radius: 1rem;
-    box-shadow: 6px 6px 6px; }
+    box-shadow: 6px 6px 6px;
+    /*efectos de mouse sobre mito*/ }
     main #mito2 .subtitulo {
       font-family: "Open Sans"; }
     main #mito2 strong p {
       padding-top: 20px; }
     main #mito2 .textMitos {
+      padding-top: 4px;
       font-family: "Dosis"; }
     main #mito2:hover {
       animation-name: efectos;
@@ -209,12 +223,14 @@ main {
   main #mito3 {
     grid-area: mito3;
     border-radius: 1rem;
-    box-shadow: 6px 6px 6px; }
+    box-shadow: 6px 6px 6px;
+    /*efectos de mouse sobre mito*/ }
     main #mito3 .subtitulo {
       font-family: "Open Sans"; }
     main #mito3 strong p {
       padding-top: 20px; }
     main #mito3 .textMitos {
+      padding-top: 4px;
       font-family: "Dosis"; }
     main #mito3:hover {
       animation-name: efectos;
@@ -258,25 +274,43 @@ main {
     gap: 2rem;
     justify-content: center;
     text-align: center; }
+    main #seccionPlanes a {
+      color: black; }
     main #seccionPlanes #consultas {
       grid-area: consultas;
       border-radius: 1rem;
-      box-shadow: 6px 6px 6px; }
+      box-shadow: 6px 6px 6px;
+      text-align: center; }
       main #seccionPlanes #consultas .textPlanes {
         font-family: "Dosis"; }
+      main #seccionPlanes #consultas img {
+        width: 300px; }
+      main #seccionPlanes #consultas p {
+        padding-top: 10px; }
     main #seccionPlanes #planAlimen {
       grid-area: planAlimen;
       border-radius: 1rem;
-      box-shadow: 6px 6px 6px; }
+      box-shadow: 6px 6px 6px;
+      text-align: center; }
       main #seccionPlanes #planAlimen .textPlanes {
         font-family: "Dosis"; }
+      main #seccionPlanes #planAlimen img {
+        width: 300px; }
+      main #seccionPlanes #planAlimen p {
+        padding-top: 10px; }
     main #seccionPlanes #controles {
       grid-area: controles;
       border-radius: 1rem;
-      box-shadow: 6px 6px 6px; }
+      box-shadow: 6px 6px 6px;
+      text-align: center; }
       main #seccionPlanes #controles .textPlanes {
         font-family: "Dosis"; }
-  @media (max-width: 675px) {
+      main #seccionPlanes #controles img {
+        width: 300px;
+        height: 200px; }
+      main #seccionPlanes #controles p {
+        padding-top: 10px; }
+  @media (max-width: 1040px) {
     main #seccionPlanes {
       padding-top: 2rem;
       display: grid;

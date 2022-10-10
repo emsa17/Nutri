@@ -1,40 +1,34 @@
-@import 'base/colors.scss';
-@import 'base/tipografia.scss';
-@import 'acercademi.scss';
-@import 'contacto.scss';
-@import 'footer.scss';
-@import 'header.scss';
-@import 'index.scss';
-@import 'infoEducativa.scss';
-@import 'servicios.scss';
-
-
-
-
+@import "base/colors.scss";
+@import "base/tipografia.scss";
+@import "acercademi.scss";
+@import "contacto.scss";
+@import "footer.scss";
+@import "header.scss";
+@import "index.scss";
+@import "infoEducativa.scss";
+@import "servicios.scss";
 
 body {
-    background-image: linear-gradient(to right, whitesmoke, $backround-page);
+  background-image: linear-gradient(to right, whitesmoke, $backround-page);
 
-    #logo {
-        width: 200px;
-        padding-top: 100px;
+  #logo {
+    width: 200px;
+    padding-top: 100px;
+  }
+
+  main {
+    display: flex;
+    font-size: x-large;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+  }
+
+  @media (max-width: 576px) {
+    #portada {
+      img {
+        width: 300px;
+      }
     }
-
-    main {
-        display: flex;
-        font-size: x-large;
-        justify-content: center;
-        align-items: center;
-        margin: 0.5rem;
-
-    }
-
-    @media(max-width: 576px) {
-        #portada {
-            img {
-                width: 300px;
-            }
-        }
-    }
-
+  }
 }

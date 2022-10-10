@@ -1,126 +1,106 @@
 @mixin sombra-borde {
-    border-radius: 1rem;
-
+  border-radius: 1rem;
 }
 
-%efectosIndex{
-    &:hover {
-        animation-name: movIndex;
-        animation-iteration-count: inherit;
-        animation-timing-function: ease-in;
-        animation-duration: 4s;
+%efectosIndex {
+  &:hover {
+    animation-name: movIndex;
+    animation-iteration-count: inherit;
+    animation-timing-function: ease-in;
+    animation-duration: 4s;
 
-
-        @keyframes movIndex{
-            0% {
-                background-color: $efecto-color-index;
-            }
-        }
+    @keyframes movIndex {
+      0% {
+        background-color: $efecto-color-index;
+      }
     }
+  }
 }
 
 /*--------------------------------------------------*/
 
-
 body {
+  #temasActualidad {
+    text-align: center;
+    padding-top: 20px;
+    justify-content: center;
+    gap: 10px;
+    font-family: $tipografia-parrafos;
+    display: grid;
+    grid-template-areas: "kale huerta quinoa";
+  }
 
+  main {
+    .tituloActualidad {
+      font-family: $tipografia-titulos;
+      font-size: calc(4rem + 0.9vw);
+      text-align: center;
+      padding-top: 30px;
+    }
+
+    #kale {
+      grid-area: kale;
+      border-radius: 1rem;
+      /*background-color: $color-temas-actualidad;*/
+      @extend %efectosIndex;
+
+      img {
+        @include sombra-borde;
+        align-self: center;
+        width: 50%;
+      }
+    }
+
+    #huertaOrganica {
+      grid-area: huerta;
+      border-radius: 1rem;
+      /*background-color: $color-temas-actualidad;*/
+      @extend %efectosIndex;
+      padding-top: 25px;
+
+      img {
+        padding-top: 15px;
+        @include sombra-borde;
+        align-self: center;
+        width: 45%;
+      }
+
+      h3 {
+        padding-top: 30px;
+      }
+    }
+  }
+
+  #quinoa {
+    grid-area: quinoa;
+    border-radius: 1rem;
+    /*background-color: $color-temas-actualidad;*/
+    @extend %efectosIndex;
+    padding-top: 25px;
+
+    img {
+      padding-top: 15px;
+      @include sombra-borde;
+      align-self: center;
+      width: 50%;
+    }
+
+    h3 {
+      padding-top: 30px;
+    }
+
+    p {
+      padding-top: -10px;
+    }
+  }
+
+  @media (max-width: 675px) {
     #temasActualidad {
-        text-align: center;
-        padding-top: 20px;
-        justify-content: center;
-        gap: 10px;
-        font-family: $tipografia-parrafos;
-        display: grid;
-        grid-template-areas: "kale huerta quinoa";
-
+      display: grid;
+      grid-template-areas:
+        "kale"
+        "huerta"
+        "quinoa";
     }
-
-    main {
-
-        .tituloActualidad {
-            font-family: $tipografia-titulos;
-            font-size: calc(4rem + .9vw);
-            text-align: center;
-            padding-top: 30px;
-
-
-
-        }
-
-        #kale {
-            grid-area: kale;
-            border-radius: 1rem;
-            /*background-color: $color-temas-actualidad;*/
-            @extend %efectosIndex;
-
-           
-            img {
-           
-                @include sombra-borde;
-                align-self: center;
-                width: 50%
-            }
-
-
-
-        }
-
-        #huertaOrganica {
-            grid-area: huerta;
-            border-radius: 1rem;
-            /*background-color: $color-temas-actualidad;*/
-            @extend %efectosIndex;
-            padding-top: 25px;
-
-            img {
-                padding-top: 15px;
-                @include sombra-borde;
-                align-self: center;
-                width: 45%;
-            }
-
-            h3 {
-                padding-top: 30px;
-            }
-
-          
-
-        }
-    }
-
-    #quinoa {
-        grid-area: quinoa;
-        border-radius: 1rem;
-        /*background-color: $color-temas-actualidad;*/
-        @extend %efectosIndex;
-        padding-top: 25px;
-
-        img {
-            padding-top: 15px;
-            @include sombra-borde;
-            align-self: center;
-            width: 50%;
-        }
-        
-        h3 {
-            padding-top: 30px;
-        }
- 
-        p {
-            padding-top: -10px;
-        }
-    }
-    
-    @media(max-width: 675px) {
-        #temasActualidad {
-            display: grid;
-            grid-template-areas:
-                "kale"
-                "huerta"
-                "quinoa";
-        }
-    
-    }
+  }
 }
-
-

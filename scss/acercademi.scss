@@ -1,9 +1,11 @@
 h2 {
-    font-family: $tipografia-titulos;
+  font-family: $tipografia-titulos;
+  font-size: calc(2rem + 0.9vw);
 }
 
 section {
-    p {
-        font-family: $tipografia-parrafos;
-    }
+  p {
+    padding-top: 30px;
+    font-family: $tipografia-parrafos;
+  }
 }
