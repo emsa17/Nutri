@@ -15,10 +15,9 @@
   width: 80%;
 
   img {
-    border-radius: 10rem;
+    border-radius: 2rem;
     width: 700px;
-
-    height: 700px;
+    height: 500px;
   }
 }
 
@@ -160,12 +159,21 @@ main {
   /*--MEDIAQUERI--*/
 
   @media (max-width: 675px) {
+    #carro {
+      width: 50%;
+      img {
+
+        width: 200px;
+        height: 200px;
+      }
+    }
     #infoEducativa {
       display: grid;
       grid-template-areas:
         "mito1"
         "mito2"
         "mito3";
+
     }
   }
 }

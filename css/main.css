@@ -11,7 +11,7 @@
 /*Párrafos*/
 h2 {
   font-family: "Shadows Into Light";
-  font-size: calc(2rem + .9vw); }
+  font-size: calc(2rem + 0.9vw); }
 
 section p {
   padding-top: 30px;
@@ -58,7 +58,7 @@ nav {
   font-size: x-large; }
   nav a {
     text-decoration: none;
-    color: rgba(84, 179, 84, 0.829);
+    color: whitesmoke;
     font-family: "Preahvihear"; }
   nav li:hover {
     animation-name: efectosNav;
@@ -99,7 +99,7 @@ body #temasActualidad {
 
 body main .tituloActualidad {
   font-family: "Shadows Into Light";
-  font-size: calc(4rem + .9vw);
+  font-size: calc(4rem + 0.9vw);
   text-align: center;
   padding-top: 30px; }
 
@@ -154,9 +154,9 @@ main #mito1 .subtitulo, main #mito2 .subtitulo, main #mito3 .subtitulo {
   padding-left: 40px;
   width: 80%; }
   #carro img {
-    border-radius: 10rem;
+    border-radius: 2rem;
     width: 700px;
-    height: 700px; }
+    height: 500px; }
 
 main {
   /*--MEDIAQUERI--*/ }
@@ -243,6 +243,11 @@ main {
   0% {
     background-color: #989036; } }
   @media (max-width: 675px) {
+    main #carro {
+      width: 50%; }
+      main #carro img {
+        width: 200px;
+        height: 200px; }
     main #infoEducativa {
       display: grid;
       grid-template-areas: "mito1" "mito2" "mito3"; } }
@@ -266,7 +271,7 @@ main {
     font-family: "Shadows Into Light";
     text-align: center; }
     main #subtituloServicios h2 {
-      font-size: calc(2rem + .9vw); }
+      font-size: calc(2rem + 0.9vw); }
   main #seccionPlanes {
     padding-top: 2rem;
     display: grid;
