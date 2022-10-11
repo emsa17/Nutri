@@ -161,7 +161,7 @@ main {
     text-align: center;
     padding-top: 20px; }
     main #derribandoMitos h2 {
-      font-family: "Dosis";
+      font-family: "Shadows Into Light";
       font-size: calc(3rem + 0.9vw); }
   main #infoEducativa {
     gap: 2rem;
@@ -261,7 +261,7 @@ main {
     font-family: "Shadows Into Light";
     text-align: center; }
     main #subtituloServicios h2 {
-      font-size: calc(2rem + 0.9vw); }
+      font-size: calc(3rem + 0.9vw); }
   main #seccionPlanes {
     padding-top: 2rem;
     display: grid;
