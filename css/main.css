@@ -11,29 +11,24 @@
 /*Párrafos*/
 h2 {
   font-family: "Shadows Into Light";
-  font-size: calc(2rem + 0.9vw); }
+  font-size: calc(3rem + 0.9vw); }
 
 section p {
   padding-top: 30px;
   font-family: "Dosis"; }
 
-/*body {
-    background: url('../img/carro1.jpeg');
-    background-repeat: no-repeat;
-    width: max-content;
-
-}*/
 main #mainContacto {
   display: grid;
-  grid-template-areas: "textContacto textContacto" "formulario map";
-  font-family: "Dosis"; }
+  grid-template-areas: "textContacto textContacto" "formulario map"; }
   main #mainContacto h2 {
     background-color: #c8c27a;
-    font-family: "Preahvihear";
+    font-family: "Shadows Into Light";
     background: 1; }
   main #mainContacto #textoContacto {
+    font-family: "Dosis";
     padding-top: 30px; }
   main #mainContacto #form {
+    font-family: "Dosis";
     grid-area: formulario; }
   main #mainContacto #mapa {
     grid-area: map; }
@@ -274,6 +269,7 @@ main {
     justify-content: center;
     text-align: center; }
     main #seccionPlanes a {
+      text-decoration: none;
       color: black; }
     main #seccionPlanes #consultas {
       grid-area: consultas;
