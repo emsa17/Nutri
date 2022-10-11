@@ -21,9 +21,7 @@ main #mainContacto {
   display: grid;
   grid-template-areas: "textContacto textContacto" "formulario map"; }
   main #mainContacto h2 {
-    background-color: #c8c27a;
     font-family: "Shadows Into Light";
-    background: 1;
     font-size: calc(3rem + 0.9vw); }
   main #mainContacto #textoContacto {
     font-family: "Dosis";
