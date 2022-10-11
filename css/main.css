@@ -9,9 +9,9 @@
 /*Subtítulos*/
 @import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
 /*Párrafos*/
-h2 {
-  font-family: "Shadows Into Light";
-  font-size: calc(3rem + 0.9vw); }
+#acercaDeMi h2 {
+  font-family: "Preahvihear";
+  font-size: calc(2rem + 0.9vw); }
 
 section p {
   padding-top: 30px;
@@ -23,7 +23,8 @@ main #mainContacto {
   main #mainContacto h2 {
     background-color: #c8c27a;
     font-family: "Shadows Into Light";
-    background: 1; }
+    background: 1;
+    font-size: calc(3rem + 0.9vw); }
   main #mainContacto #textoContacto {
     font-family: "Dosis";
     padding-top: 30px; }
@@ -188,7 +189,7 @@ main {
     main #mito1 strong p {
       padding-top: 40px; }
     main #mito1 .textMitos {
-      padding-top: 4px;
+      padding-top: 40px;
       font-family: "Dosis"; }
     main #mito1:hover {
       animation-name: efectos;

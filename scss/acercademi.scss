@@ -1,6 +1,11 @@
-h2 {
-  font-family: $tipografia-titulos;
-  font-size: calc(3rem + 0.9vw);
+
+#acercaDeMi {
+  h2{
+    font-family: $tipografia-navbar;
+    font-size: calc(2rem + 0.9vw);
+
+  }
+
 }
 
 section {
